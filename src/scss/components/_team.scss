@@ -1,0 +1,201 @@
+// .team__name {
+//   background-color: var(--colorBackgroundSecondary);
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+// .team__workers {
+//   text-align: center;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   column-gap: 30px;
+// }
+// .team__worker {
+//   flex-basis: calc((100% - 30px) / 4);
+//   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+//     0 1px 3px 0 rgba(0, 0, 0, 0.12);
+//   background: var(--colorTextTertiary);
+// }
+// .team__title {
+//   font-weight: 700;
+//   font-size: 36px;
+//   color: var(--colorTextPrimary);
+//   text-align: center;
+//   padding-bottom: 50px;
+//   transition: transform 0.5s ease-in-out;
+//   cursor: pointer;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   transition-property: animation;
+// }
+// .team__title:hover {
+//   animation: rotate 0.5s ease-in-out forwards;
+// }
+
+// @keyframes rotate {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
+// .team__name {
+//   padding-top: 30px;
+//   font-weight: 500;
+//   font-size: 16px;
+//   color: var(--colorTextPrimary);
+// }
+// .team-worker__position {
+//   padding-bottom: 30px;
+//   padding-top: 10px;
+//   font-weight: 400;
+//   font-size: 16px;
+//   color: var(--colorTextSecondary);
+// }
+// .social {
+//   display: flex;
+//   gap: 22px;
+//   justify-content: center;
+//   padding-bottom: 42px;
+//   padding-left: 44px;
+//   padding-right: 44px;
+// }
+// .social__link {
+//   width: 44px;
+//   height: 44px;
+//   border-radius: 50%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: rgba(255, 255, 255, 0.1);
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   transition-property: background-color;
+// }
+// .social__icon {
+//   width: 20px;
+//   height: 20px;
+//   fill: #afb1b8;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   transition-property: fill;
+// }
+// .social__link:hover {
+//   background-color: var(--colorHover);
+// }
+// .social__link:hover .team-card-svg {
+//   fill: var(--colorTextTertiary);
+// }
+
+.team {
+  background-color: var(--colorBackgroundSecondary);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 1600px;
+  height: 708px;
+  margin: 0 auto;
+}
+
+.team__title {
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--colorTextPrimary);
+  text-align: center;
+  padding-bottom: 50px;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.team__title:hover {
+  animation: rotate 0.5s ease-in-out forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.team__workers {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  column-gap: 30px;
+}
+
+.team-worker {
+  width: 280px;
+  background-color: var(--colorTextTertiary);
+
+  text-align: center;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+  width: 270px;
+  height: 428px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  background: var(--colorTextTertiary);
+}
+
+.team-worker__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.team-worker__name {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--colorTextPrimary);
+  padding-top: 30px;
+}
+
+.team-worker__position {
+  font-weight: 400;
+  padding-top: 10px;
+  color: var(--colorTextSecondary);
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.social__link {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__link:hover {
+  background-color: var(--colorHover);
+}
+
+.social__link:hover .social__icon {
+  fill: var(--colorTextTertiary);
+}
